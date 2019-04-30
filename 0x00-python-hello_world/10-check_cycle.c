@@ -16,8 +16,8 @@ if(list != NULL)
 		{
 		if (i == j)
 			return(1);
-		i->next;
-		j->next->next;
+		i = i->next;
+		j = j->next->next;
 		}
 	}
 	return(0);
