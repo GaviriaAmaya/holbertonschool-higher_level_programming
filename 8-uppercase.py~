@@ -1,9 +1,0 @@
-#!/usr/bin/python3
-def uppercase(str):
-     for i in range(len(str)):
-        j = ord(str[i])
-        if j > 96 and a  < 123:
-             j = j - 32j       
-        else:
-            print("{:s}".format(chr(j)), end="")
-  
