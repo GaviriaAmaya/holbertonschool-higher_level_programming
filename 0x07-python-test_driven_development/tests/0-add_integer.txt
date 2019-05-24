@@ -1,0 +1,52 @@
+===============================
+	add_integer
+===============================
+
+This library is very simple, since it only has one function called
+``add_integer()``.
+
+Numbers
+=======
+
+``add_integer()`` returns the product of its arguments.  For numbers,
+that value is equivalent to using the ``*`` operator.
+
+::
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 3)
+    5
+
+It also works with floating-point values.
+
+::
+
+    >>> add_integer(2.0, 3)
+    5
+
+Exception must be raised when either a or b is not an int or float.
+
+::
+
+    >>> add_integer("hola", 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+::
+
+    >>> add_integer(2.0, "world")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> add_integer(1)
+    99
+
+    >>> add_integer(2.4, 3.099)
+    5
+
+    >>> add_integer(-2, 7)
+    5
+    
+    >>> add_integer(3, (9, 8))
+    Traceback (most recent call last):
+TypeError: b must be an integer
