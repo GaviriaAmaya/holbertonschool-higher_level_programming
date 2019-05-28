@@ -30,7 +30,7 @@ class Rectangle:
 
     def area(self):
         return self.height * self.width
-        
+
     def perimeter(self):
         if self.width == 0 or self.height == 0:
             return 0
@@ -41,3 +41,6 @@ class Rectangle:
         for i in range(self.__height):
             rep = "{}{}\n".format(rep, "#" * self.__width)
         return rep[:-1]
+
+    def __rep__(self):
+        return "Rectangle({}, {})".format(self.width, self.height)
