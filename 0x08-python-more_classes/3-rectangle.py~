@@ -3,8 +3,6 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
-        self.area = area
-        self.perimeter = perimeter
 
     @property
     def width(self):
@@ -37,3 +35,9 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return (2 * self.height) + (2 * self.width)
+
+    def __str__(self):
+        rep = ""
+        for i in range(self.__height):
+            rep = "{}{}\n".format(rep, "#" * self.__width)
+        return rep[:-1]
