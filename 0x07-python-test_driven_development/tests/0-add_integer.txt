@@ -5,48 +5,75 @@
 Function that adds two integers. Receives int types or float, that will be
 casted into integers
 
-Numbers
-=======
-::
+Tests:
+
+The set of tests are defined on the next cases:
+
+Import module:
 
     >>> add_integer = __import__('0-add_integer').add_integer
+
+Regular add:
+
     >>> add_integer(2, 3)
     5
 
-It also works with floating-point values.
-
-::
+Float add:
 
     >>> add_integer(2.0, 3)
     5
 
-Exception must be raised when either a or b is not an int or float.
+Cast of a float on a int, with right round:
 
-::
+    >>> add_integer(2.4, 3.099)
+    5
+
+Case: One value input:
+(This case is evaluated keeping in mind the declaration of 'b' variable, that
+is b = 98)
+
+    >>> add_integer(1)
+    99
+
+Negative numbers:
+
+    >>> add_integer(-2, 7)
+    5
+
+Error management:
+=================
+
+Raised errors are specified for type, values and overflow
+
+Type Error on 'a' member:
 
     >>> add_integer("Holberton", 3)
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-::
+Type error on 'b' member:
 
     >>> add_integer(2.0, "School")
     Traceback (most recent call last):
     TypeError: b must be an integer
 
-    >>> add_integer(1)
-    99
-
-    >>> add_integer(2.4, 3.099)
-    5
-
-    >>> add_integer(-2, 7)
-    5
+Case: More than one value, list, tuples:
 
     >>> add_integer(3, (9, 8))
     Traceback (most recent call last):
     TypeError: b must be an integer
 
+Float type errors:
+==================
+
+Case: Float Not a Number:
+
     >>> add_integer(3, float('nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
+
+Case: Float as infinite:
+
+    >>> add_integer(3, float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
