@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+def matrix_divided(matrix, div):
+
+    if type(div) is not int and type(div) is not float:
+        raise TypeError("div must be a number")
+
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+
+    if type(matrix) is not list or type(matrix[0]) is not list:
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    
