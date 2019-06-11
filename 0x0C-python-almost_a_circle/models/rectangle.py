@@ -15,19 +15,19 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        return __height.self
+        return self.__height
 
     @property
     def width(self):
-        return __width.self
+        return self.__width
 
     @property
     def x(self):
-        return __x.self
+        return self.__x
 
     @property
     def y(self):
-        return __y.self
+        return self.__y
 
     @height.setter
     def height(self, value):
