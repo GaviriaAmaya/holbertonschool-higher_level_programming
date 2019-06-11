@@ -68,11 +68,16 @@ class Rectangle(Base):
 
     def display(self):
         "Shows the area of the rectangle with sharp symbol."
-        for i in range (self.__y):
+        for i in range(self.__y):
             print()
-        for i in range (self.__height):
-            for j in range (self.__x):
+        for i in range(self.__height):
+            for j in range(self.__x):
                 print(" ", end="")
-            for k in range (self.__width):
+            for k in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        return("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format
+               (self.id, self.__x, self.__y, self.__width,
+                self.__height))
