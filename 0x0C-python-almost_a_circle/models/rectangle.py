@@ -4,6 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    "Rectangle class definition"
 
     def __init__(self, width, height, x=0, y=0, id=None):
         "Rectangle constructor"
@@ -60,3 +61,18 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        self.area = self.__width * self.__height
+        return self.area
+
+    def display(self):
+        "Shows the area of the rectangle with sharp symbol."
+        for i in range (self.__y):
+            print()
+        for i in range (self.__height):
+            for j in range (self.__x):
+                print(" ", end="")
+            for k in range (self.__width):
+                print("#", end="")
+            print()
