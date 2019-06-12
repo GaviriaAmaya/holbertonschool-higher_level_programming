@@ -1,45 +1,36 @@
 #!/usr/bin/python3
-"""Inheritance from Rectangle type"""
+'Inheritance from Rectangle type'
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Square - Defines an Square object."""
+    'Square - Defines an Square object.'
     def __init__(self, size, x=0, y=0, id=None):
-        """__init__ - Constructor method"""
+        '__init__ - Constructor method'
         super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
-        """size - Gets the size
-        """
+        'size - Gets the size
+        '
         return super().width
 
     @size.setter
     def size(self, value):
-        """size - Sets the size of a rectangle,
+        'size - Sets the size of a rectangle,
            according to the rectangle class
-        """
+        '
         self.width = value
         self.height = value
 
     def __str__(self):
-        """__str__ - Str method to the Square class representation
-        """
+        '__str__ - Str method to the Square class representation
+        '
         return "[{}] ({}) {}/{} - {}".format(self.__class__.__name__,
                                              self.id, self.x, self.y,
                                              self.height)
 
     def update(self, *args, **kwargs):
-        """update - Update the attributes for the Square class
-        """
-        if len(args) >= 2:
-            args = list(args)
-            args.insert(2, args[1])
-        aux_kwargs = kwargs.copy()
-        for key in aux_kwargs:
-            if key == "size":
-                kwargs["width"] = kwargs[key]
-                kwargs["height"] = kwargs[key]
-
-                super().update(*args, **kwargs)
+        'update - Update the attributes for the Square class
+        '
+        for i in range 

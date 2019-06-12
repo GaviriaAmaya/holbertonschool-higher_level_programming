@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""Inheritation from Class Base: This imports all the Base class"""
+'Inheritation from Class Base: This imports all the Base class'
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Rectangle - class definition"""
+    'Rectangle - class definition'
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """__init__ - Rectangle constructor: Defines a normal Rectangle
+        '__init__ - Rectangle constructor: Defines a normal Rectangle
         Based on Width, Height, and position (X,Y) attributes
-        """
+        '
         super().__init__(id)
         self.width = width
         self.height = height
@@ -18,22 +18,22 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """height - Gets the height attribute"""
+        'height - Gets the height attribute'
         return self.__height
 
     @property
     def width(self):
-        """width - Gets the width attribute"""
+        'width - Gets the width attribute'
         return self.__width
 
     @property
     def x(self):
-        """x - Gets the x position attribute"""
+        'x - Gets the x position attribute'
         return self.__x
 
     @property
     def y(self):
-        """y - Gets the y position attribute"""
+        'y - Gets the y position attribute'
         return self.__y
 
     @height.setter
