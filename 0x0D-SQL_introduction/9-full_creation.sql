@@ -1,4 +1,4 @@
--- Comment
+-- Creates a table and insert values into that
 CREATE TABLE IF NOT EXISTS second_table(
        id INT,
        name VARCHAR(256),

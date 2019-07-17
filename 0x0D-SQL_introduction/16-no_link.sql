@@ -1,4 +1,4 @@
--- Comment
+-- Lists all records
 SELECT score, name
 FROM second_table
 where name IS NOT NULL

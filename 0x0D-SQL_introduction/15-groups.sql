@@ -1,4 +1,4 @@
--- Comment
+-- Displays numbers and groups. Then orders
 SELECT score, COUNT(score) AS number
 FROM second_table
 GROUP BY score
