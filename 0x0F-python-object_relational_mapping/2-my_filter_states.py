@@ -13,7 +13,8 @@ if __name__ == "__main__":
                 BY id ASC".format(sys.argv[4]))
     query_rows = cur.fetchall()
 
-    print(query_rows)
+    for row in query_rows:
+        print(row)
 
     cur.close()
     dtb.close()
