@@ -10,8 +10,8 @@ if __name__ == "__main__":
                           passwd='%s' % sys.argv[2],
                           database='%s' % sys.argv[3])
     cur = dtb.cursor()
-    cur.execute("SELECT * FROM states WHERE BINARY name = '%s' ORDER\
-                BY id ASC" % sys.argv[4])
+    cur.execute("SELECT * FROM states WHERE BINARY name = %s ORDER\
+                BY id ASC".format(sys.argv[4]).split('\'')[0].split('\;'))
     query_rows = cur.fetchall()
 
     for row in query_rows:
