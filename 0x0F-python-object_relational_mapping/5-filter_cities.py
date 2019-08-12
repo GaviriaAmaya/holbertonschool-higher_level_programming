@@ -17,9 +17,10 @@ if __name__ == "__main__":
                                                    .split(';')[0]))
 
         query_rows = cur.fetchall()
-
+        my_list = []
         for row in query_rows:
-            print(row)
+            my_list.append(row[0])
+        print (", ".join(my_list))
 
         cur.close()
         dtb.close()
