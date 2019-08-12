@@ -7,7 +7,7 @@ import MySQLdb
 if __name__ == "__main__":
 
     dtb = MySQLdb.connect(host="localhost", user=sys.argv[1], port=3306,
-                              passwd=sys.argv[2], database=sys.argv[3])
+                          passwd=sys.argv[2], database=sys.argv[3])
     cur = dtb.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_rows = cur.fetchall()
