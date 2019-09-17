@@ -1,3 +1,3 @@
 #!/usr/bin/node
-// Prints Long string. Semistandard doesn't allow single line var
+// Prints Long string
 console.log('C is fun\nPython is cool\nJavascript is awesome');
