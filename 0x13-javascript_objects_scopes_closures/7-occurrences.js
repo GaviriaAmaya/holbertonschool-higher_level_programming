@@ -3,10 +3,10 @@
 
 exports.nbOccurences = function (list, searchElement) {
   let counter = 0;
-  for (let iterator of list) {
+  for (const iterator of list) {
     if (iterator === searchElement) {
       counter++;
     }
   }
   return (counter);
-}
+};
