@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// COmpleted!
+11;rgb:0000/2d2d/5959// COmpleted!
 
 const request = require('request');
 const url = process.argv[2];
@@ -11,8 +11,8 @@ request.get(url, function (error, response, body) {
   } else {
     for (let i = 0; i < JSON.parse(body).length; i++) {
       if (JSON.parse(body)[i].completed) {
-	const count = JSON.parse(body)[i].userId;
-	task[count] = (task[count] || 0) + 1;
+        const count = JSON.parse(body)[i].userId;
+        task[count] = (task[count] || 0) + 1;
       }
     }
   }
