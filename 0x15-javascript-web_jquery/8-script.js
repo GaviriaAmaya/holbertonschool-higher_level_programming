@@ -1,10 +1,10 @@
 $.ajax({
   url: 'https://swapi.co/api/films/?format=json',
   type: 'GET',
-  dataType: 'json',
+  dataType: 'json'
 })
-  .done(function ( json ) {
-    for (let results of json.results) { 
+  .done(function (json) {
+    for (const results of json.results) {
       $('UL#list_movies').append('<li>' + results.title + '</li>');
-    };
-});
+    }
+  });
