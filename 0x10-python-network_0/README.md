@@ -1,61 +1,33 @@
 <img src="https://camo.githubusercontent.com/c5d27ff0111c29e03f64bc98ffd377b21d294db6/68747470733a2f2f7777772e686f6c626572746f6e7363686f6f6c2e636f6d2f686f6c626572746f6e2d6c6f676f2d747769747465722d636172642e706e67">
 Holberton School; Cohort 8: Bog 2019
 
-# 0x00. Hello World
+# 0x10. Python - Network #0
 <background img src="https://intranet.hbtn.io/assets/holberton-logo-default-f524735c3d53aec88994dbb6130b16941bb20dc6cd437c99209906fab967b834.png">
 
 ## Learning Objectives
 With the development of this project you learn the following:
 
-### * What are the arithmetic operators and how to use them
+### * What an URL is
 
-Arithmetic operators are the very basic operators between two or more variables. These are addition, substraction, multiplication, division and modulus. Depending on what result you want to obtain, there are useful tools to do some procedures.
-
-_Name_           | _Symbol_| _Description_                   |
------------------|---------|---------------------------------|
-Plus             |    +    |Calculates the adition operation |
-Minus            |    -    |Performs the substraction        |
-Asterisk         |    *    |Multiplication sign              |
-Slash            |    /    |Exact division symbol            |
-Percent          |    %    |Divides and operates with module |
-
-### * What are the logical operators (sometimes called boolean operators) and how to use them
-
-Proving
-
-### * What the the relational operators and how to use them
-### * What values are considered TRUE and FALSE in C
-### * What are the boolean operators and how to use them
-### * How to use the if, if ... else statements
-### * How to use comments
-### * How to declare variables of types char, int, unsigned int
-### * How to assign values to variables
-### * How to print the values of variables of type char, int, unsigned int with printf
-### * How to use the while loop
-### * How to use variables with the while loop
-### * How to print variables using printf
-### * What is the ASCII character set
-### * What are the purpose of the gcc flags -m32 and -m64
-
-## How to start
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/GioRubioHolberton/AirBnB_clone.git
-```
-
-It is necessary to have python 3.4 installed
-
-## Classes in this project
-
-The following are the files used.
+_(Uniform Resource Locator)_ URL defines a web adress to load an specific resource. Is composed, essentialy, by four parts:
+- **Protocol**: Defines the type of protocol will be use for transmision of resources -> http, https and ftp are examples
+- **Host**: The host is the name assigned for an IP. This is the way to be rocognizable and human memorizable. It is resolved by DNS ->\
+www.example.com, intranet.holberton.io are examples
+- **Path**: Is the path from the root of the website to the webservice on the host. -> /index.html/
+- **Query string**: Is the parameters applied to the formated resource of the path. -> ?name=Juan
 
 
-Place            | city_id, user_id, name     |
-Place            | description, number_rooms  |
-Place            | number_bathrooms,max_guest |
-Review           | place_id, user_id, text    |
+### * What HTTP is
+
+_(HyperText Transfer Protocol)_ Is the protocol that works, essentially, through petitions by a client and responses by servers. That petitions can be done through methods.
+
+### * How to read an URL
+
+The URL is composed by four parts. The way to read it is especially amplied on the upper section [What a URL is](What an URL is)
+
+### * What a domain name is
+
+A domain name is a human readable way to translate an IP address from an specific server. 
 
 
 ## Author
