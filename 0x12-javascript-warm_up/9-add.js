@@ -1,17 +1,16 @@
 #!/usr/bin/node
 // Function that adds two integers
 
-let num1 = process.argv[2];
-let num2 = process.argv[3];
+let a = process.argv[2];
+let b = process.argv[3];
 
-if (process.argv <= 2) {
-  console.log(NaN);
-} else if (isNaN(num1) || isNaN(num2)) {
-  console.log(NaN);
-} else {
-  num1 = parseInt(num1);
-  num2 = parseInt(num2);
 
-  const result = num1 + num2;
-  console.log(result);
-}
+function add(a, b) {
+  if (process.argv[3]) {
+    return (parseInt(a)) + (parseInt(b));
+  } else {
+    return NaN;
+  } 
+};
+
+  console.log(add(a, b));
