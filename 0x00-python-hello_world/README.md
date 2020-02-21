@@ -5,9 +5,26 @@
 ## Learning Objectives.
 General Objectives
 
-#### * Why C programming is awesome
->C programming allows you to learn the logic of the programming and have better practices in a real world. If I'd have\ to learn to program again, I'd choose C for sure.
+#### * Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
+Python is a high level programming language that can be used from Back End development to Data Science and Data visualization.\
+Python have too many tools (Spyder, Jupyter...) that are as useful as awesome to work
+#### * Who created Python
+Guido Van Rossum
+#### * Who is Guido van Rossum
+Is the [BDFL](https://en.wikipedia.org/wiki/Benevolent_Dictator_for_Life "What's this title?") creator of Python, ex Google Developer and Dropbox dev.
+#### * Where does the name ‘Python’ come from
+Moty Python's english tv show
+#### * What is the Zen of Python
+Is a code-based normative to build clean and reuseful programming. The main idea f Python is to be a comprehensive and multi use programming language
+#### * How to use the Python interpreter
+Just type ´´´python3´´´ as command
+#### * How to print text and variables using print
+To print text, just  put the string with single or double quotes (Consistently) inside the ´´´print()´´´ function. For variables, just put inside
+#### * How to use strings
+The strings can be declarded with a variable name and single or double quotes. Is important to be consistent: If you use a starting single quote, the string should end with single quote. Same with double quotes
+#### * What are indexing and slicing in Python
 
+#### * What is the official Holberton Python coding style and how to check your code with PEP 8
 
 ## Work log.
 
