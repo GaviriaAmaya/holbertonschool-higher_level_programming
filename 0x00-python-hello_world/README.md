@@ -23,8 +23,9 @@ To print text, just  put the string with single or double quotes (Consistently) 
 #### * How to use strings
 The strings can be declarded with a variable name and single or double quotes. Is important to be consistent: If you use a starting single quote, the string should end with single quote. Same with double quotes
 #### * What are indexing and slicing in Python
-
+Indexing is the way of treatment a string at positional representations, character by character, starting by index[0]. Slicing is accessing index of a string from the begining to the end (The end is not contained): string[0:42] stands for take the string from the position one to the position 42
 #### * What is the official Holberton Python coding style and how to check your code with PEP 8
+PEP8 is the standard for styling. The new main standard is PyCode. To check the script, just use the command ´´´pep8 [filename]´´´
 
 ## Work log.
 
