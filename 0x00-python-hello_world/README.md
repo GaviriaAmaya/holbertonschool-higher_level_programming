@@ -29,10 +29,10 @@ PEP8 is the standard for styling. The new main standard is PyCode. To check the 
 
 ## Work log.
 
-##### - How to interact on Man Pages:
-> Search </, ?>, navigate <n> and other shortcuts
+##### - Stacks and Queues
+Python is a C based programming language, so it takes a compilation proccess on back. Through certain data structures, Python can reproduce an excellent example of Stack, through pop() method on lists
 
 ## Authors.
 * Juan Amaya Gaviria.
 
->>>>>>>>>>>>>>Holberton School; Cohort 8: Bog 2019
+Holberton School; Cohort 8: Bog 2019
