@@ -14,16 +14,24 @@ if is used as plain english. When ends the declaration, the clause ends with : a
 else if is written as elif
 else is ended with :
 #### * How to use comments
-Comments can be with # symbol, single quotes, double quotes or three times quotes
+Comments can be with # symbol, single quotes, double quotes or three times quotes. Quotes are Docstrings and is a good practice to put there
 #### * How to affect values to variables
 
 #### * How to use the while and for loops
+While is pretty similar to C\
+For loops have many different ways to use. From ´´´for in´´´ to ´´´for in range()´´´. Also, can be used with else clause
 #### * How is Python’s for different from C‘s?
+In C, for clauses have a halt condition. Python automatically stops in range
 #### * How to use the break and continues statements
+´´´break´´´ and ´´´continue´´´ statements works as in C. Works when breaks a loop in an specific condition, or continue at other case
 #### * How to use else clauses on loops
+In C, implicit else clauses are used out of the looop. On Python, the else clause implies that for loop is a constant boolean iteration. If all clauses are falses, goes to the else statement
 #### * What does the pass statement do, and when to use it
+Pass is used when a function or object are uncomplete. Basically, pass defines a "Don't do that"
 #### * How to use range
+range starts a loop from the first parameter until the second parameter, unincluded. A third parameter can be included, that indicates how much the increment will be
 #### * What is a function and how do you use functions
+Function is a
 #### * What does return a function that does not use any return statement
 #### * Scope of variables
 #### * What’s a traceback
